@@ -2,6 +2,7 @@
 
 ##  Descripción
 
+
 Cloud Config Server es un servicio de **Spring Cloud Config** que centraliza la configuración de todos los microservicios desde un repositorio Git. Permite gestionar configuraciones por ambiente (dev, stage, prod) sin necesidad de recompilar aplicaciones.
 
 ##  Propósito
