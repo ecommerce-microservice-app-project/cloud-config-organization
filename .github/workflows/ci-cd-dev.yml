@@ -63,11 +63,12 @@ jobs:
       uses: sonarsource/sonarqube-scan-action@master
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
+        SONAR_HOST_URL: http://34.42.225.63:9000
       with:
         projectBaseDir: .
         args: >
           -Dsonar.projectKey=cloud-config-organization
+          -Dsonar.host.url=http://34.42.225.63:9000
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         
   build-docker:
