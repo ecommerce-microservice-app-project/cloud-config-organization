@@ -68,7 +68,6 @@ jobs:
         projectBaseDir: .
         args: >
           -Dsonar.projectKey=cloud-config-organization
-          -Dsonar.host.url=${{ vars.SONAR_HOST_URL }}
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         
   build-docker:
